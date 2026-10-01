@@ -21,10 +21,10 @@
 <fieldset>
     <legend>Cat Information Details</legend>
 
-    <label>Cat's Name
-    <input type="text" name="cat_name"/></label>
+    <p><label>Cat's Name
+    <input type="text" name="cat_name"/></label></p>
 
-    <label>Breed
+    <p><label>Breed
         <select name="breed">
             <option value="british_shorthair">British Shorthair</option>
             <option value="burmese">Burmese</option>
@@ -33,7 +33,34 @@
             <option value="rusian_blue">Rusian Blue</option>
             <option value="siamese">Siamese</option>
             <option value="other">Other</option>
-
         </select>
-    </label>
+    </label></p>
+    
+    <p><label>Day of Birth
+    <input type="date" name="bday"/></label></p>
+    
+    <fieldset>
+        <legend>Sex</legend>
+        <p><label><input type="radio" name="sex" value="male"/>Male</label></p>
+        
+        <p><label><input type="radio" name="sex" value="female"/>Female</label></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Competition Categories</legend>
+        <p>Select which categories your would like your cat entered</p>
+        
+        <p><label>Best of Breed
+        <input type="checkbox" name="categories" value="best_breed"/></label></p>
+        
+        <p><label>Cutest 
+        <input type="checkbox" name="categories" value="cutest"/></label></p>
+
+        <p><label>Ugliest 
+        <input type="checkbox" name="categories" value="ugliest "/></label></p>
+
+    </fieldset>
+
+    <p><label>Comments
+    <textarea name="comments" rows="4" cols="45"></textarea></label></p>
 </fieldset>
