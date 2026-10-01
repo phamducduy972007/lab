@@ -1,66 +1,117 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="UTL-8">
-    <meta name="desciption" content="helpdesk">
-    <meta name="keywords" content="lab3">
-    <meta name="author" content="ducduy">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CWA Help Desk Appointment</title>
-</html>
-
-<div>
+</head>
+<body>
     <img src="logo.png" alt="Swinburne logo">
-    <h1>Cat Show Registration Page</h1>
-    <form id="personal" method="post"></form>
-        <p><label for="owner's name">Owner's Name</label>
-        <input type="text" name="users_name" id="owner's name"/></p>
+    <h1>CWA Help Desk Appointment</h1>
+    <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+    <p>Check Blackboard for when CWA tutors will be there.</p>
 
-        <p><label for="email">Email</label>
-        <input type="text" name="email_address" id="email"/></p>
-</div>
+    <form action="#" method="POST">
 
-<fieldset>
-    <legend>Cat Information Details</legend>
+        <fieldset>
+            <legend>Student details</legend>
 
-    <p><label>Cat's Name
-    <input type="text" name="cat_name"/></label></p>
+            <p>
+                <label for="studentID">Student ID</label>
+                <input type="text" id="studentID" name="studentID" 
+                                    pattern="\d{7,10}"
+                                    required = "required">
+            </p>
 
-    <p><label>Breed
-        <select name="breed">
-            <option value="british_shorthair">British Shorthair</option>
-            <option value="burmese">Burmese</option>
-            <option value="manx">Manx</option>
-            <option value="ragdoll">Ragdoll</option>
-            <option value="rusian_blue">Rusian Blue</option>
-            <option value="siamese">Siamese</option>
-            <option value="other">Other</option>
-        </select>
-    </label></p>
-    
-    <p><label>Day of Birth
-    <input type="date" name="bday"/></label></p>
-    
-    <fieldset>
-        <legend>Sex</legend>
-        <p><label><input type="radio" name="sex" value="male"/>Male</label></p>
-        
-        <p><label><input type="radio" name="sex" value="female"/>Female</label></p>
-    </fieldset>
+            <p>
+                <label for="givenName">Given Name</label>
+                <input type="text" id="givenName" name="givenName" maxlength="15" required pattern="[A-Za-z\s]{1,15}">
 
-    <fieldset>
-        <legend>Competition Categories</legend>
-        <p>Select which categories your would like your cat entered</p>
-        
-        <p><label>Best of Breed
-        <input type="checkbox" name="categories" value="best_breed"/></label></p>
-        
-        <p><label>Cutest 
-        <input type="checkbox" name="categories" value="cutest"/></label></p>
+                <!-- Family Name: required, tối đa 15 ký tự, chỉ chứa chữ cái -->
+                <label for="familyName">Family Name</label>
+                <input type="text" id="familyName" name="familyName" maxlength="15" required pattern="[A-Za-z\s]{1,15}">
+            </p>
+        </fieldset>
 
-        <p><label>Ugliest 
-        <input type="checkbox" name="categories" value="ugliest "/></label></p>
+        <!-- Your unit -->
+        <fieldset>
+            <legend>Your unit</legend>
 
-    </fieldset>
+            <p>
+                <!-- Radio buttons: chọn ít nhất 1 cái bằng required -->
+                <input type="radio" id="cos10011" name="unit" value="COS10011" required>
+                <label for="cos10011">COS10011</label>
 
-    <p><label>Comments
-    <textarea name="comments" rows="4" cols="45"></textarea></label></p>
-</fieldset>
+                <input type="radio" id="cos60004" name="unit" value="COS60004">
+                <label for="cos60004">COS60004</label>
+
+                <input type="radio" id="cos60007" name="unit" value="COS60007">
+                <label for="cos60007">COS60007</label>
+            </p>
+
+            <p>
+                <!-- Select dropdown: required với option đầu có value="" -->
+                <label for="tutor">Your Tutor</label>
+                <select id="tutor" name="tutor" required>
+                    <option value="">Please Select</option>
+                    <option value="tutor1">Alex Smith</option>
+                    <option value="tutor2">John Doe</option>
+                    <option value="tutor3">Sarah Connor</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <!-- Issue -->
+        <fieldset>
+            <legend>Issue</legend>
+
+            <p>
+                <!-- Checkbox HTML tích chọn mặc định (checked) -->
+                <input type="checkbox" id="html" name="issue" value="HTML" checked>
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" name="issue" value="CSS">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="javascript" name="issue" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+
+                <input type="checkbox" id="php" name="issue" value="PHP">
+                <label for="php">PHP</label>
+
+                <input type="checkbox" id="mysql" name="issue" value="MySQL">
+                <label for="mysql">MySQL</label>
+            </p>
+
+            <p>
+                <!-- Textarea có placeholder -->
+                <label for="description">Description of Issue</label><br>
+                <textarea id="description" name="description" rows="4" cols="40" placeholder="Write description of your problem here..."></textarea>
+            </p>
+        </fieldset>
+
+        <!-- Preferred Date / Time -->
+        <fieldset>
+            <legend>Preferred Date / Time</legend>
+
+            <p>
+                <!-- Sử dụng input date & time với placeholder/pattern cho trường hợp đổi sang text -->
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}">
+            </p>
+            <p>
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" placeholder="00:00" pattern="\d{2}:\d{2}">
+            </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Nút Submit và Reset -->
+        <input type="submit" value="Book">
+        <input type="reset" value="Reset form">
+
+    </form>
+
+</body>
+</html>
