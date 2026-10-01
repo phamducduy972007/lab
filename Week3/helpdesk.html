@@ -25,21 +25,23 @@
 
             <p>
                 <label for="givenName">Given Name</label>
-                <input type="text" id="givenName" name="givenName" maxlength="15" required pattern="[A-Za-z\s]{1,15}">
+                <input type="text" id="givenName" name="givenName" maxlength="15"  
+                                    pattern="[A-Za-z\s]{1,15}"
+                                    required="required">
 
-                <!-- Family Name: required, tối đa 15 ký tự, chỉ chứa chữ cái -->
                 <label for="familyName">Family Name</label>
-                <input type="text" id="familyName" name="familyName" maxlength="15" required pattern="[A-Za-z\s]{1,15}">
+                <input type="text" id="familyName" name="familyName" maxlength="15"  
+                                    pattern="[A-Za-z\s]{1,15}"
+                                    required="required">
             </p>
         </fieldset>
 
-        <!-- Your unit -->
         <fieldset>
             <legend>Your unit</legend>
 
             <p>
-                <!-- Radio buttons: chọn ít nhất 1 cái bằng required -->
-                <input type="radio" id="cos10011" name="unit" value="COS10011" required>
+                <input type="radio" id="cos10011" name="unit" value="COS10011" 
+                                    required="required">
                 <label for="cos10011">COS10011</label>
 
                 <input type="radio" id="cos60004" name="unit" value="COS60004">
@@ -50,9 +52,9 @@
             </p>
 
             <p>
-                <!-- Select dropdown: required với option đầu có value="" -->
                 <label for="tutor">Your Tutor</label>
-                <select id="tutor" name="tutor" required>
+                <select id="tutor" name="tutor" 
+                        required=""required>
                     <option value="">Please Select</option>
                     <option value="tutor1">Alex Smith</option>
                     <option value="tutor2">John Doe</option>
@@ -61,53 +63,45 @@
             </p>
         </fieldset>
 
-        <!-- Issue -->
         <fieldset>
             <legend>Issue</legend>
 
             <p>
-                <!-- Checkbox HTML tích chọn mặc định (checked) -->
-                <input type="checkbox" id="html" name="issue" value="HTML" checked>
                 <label for="html">HTML</label>
+                <input type="checkbox" id="html" name="issue" value="HTML" checked>
 
-                <input type="checkbox" id="css" name="issue" value="CSS">
                 <label for="css">CSS</label>
+                <input type="checkbox" id="css" name="issue" value="CSS">
 
-                <input type="checkbox" id="javascript" name="issue" value="JavaScript">
                 <label for="javascript">JavaScript</label>
-
-                <input type="checkbox" id="php" name="issue" value="PHP">
+                <input type="checkbox" id="javascript" name="issue" value="JavaScript">
+  
                 <label for="php">PHP</label>
+                <input type="checkbox" id="php" name="issue" value="PHP">
 
-                <input type="checkbox" id="mysql" name="issue" value="MySQL">
                 <label for="mysql">MySQL</label>
+                <input type="checkbox" id="mysql" name="issue" value="MySQL">
             </p>
 
             <p>
-                <!-- Textarea có placeholder -->
                 <label for="description">Description of Issue</label><br>
                 <textarea id="description" name="description" rows="4" cols="40" placeholder="Write description of your problem here..."></textarea>
             </p>
         </fieldset>
 
-        <!-- Preferred Date / Time -->
         <fieldset>
             <legend>Preferred Date / Time</legend>
 
             <p>
-                <!-- Sử dụng input date & time với placeholder/pattern cho trường hợp đổi sang text -->
                 <label for="date">Date</label>
-                <input type="date" id="date" name="date" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}">
+                <input type="date" id="date" name="date" pattern="\d{2}/\d{2}/\d{4}">
             </p>
             <p>
                 <label for="time">Time</label>
-                <input type="time" id="time" name="time" placeholder="00:00" pattern="\d{2}:\d{2}">
+                <input type="time" id="tim" name="Time" placeholder="00:00" pattern="\d{2}:\d{2}">
             </p>
         </fieldset>
 
-        <br>
-
-        <!-- Nút Submit và Reset -->
         <input type="submit" value="Book">
         <input type="reset" value="Reset form">
 
