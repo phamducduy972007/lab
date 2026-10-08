@@ -34,6 +34,10 @@ nav a {
     border: 4px solid #ccc;
 }
 
+table {
+    border: 1px solid black;
+}
+
 hr {
     border: 2px solid black;
 }
@@ -58,4 +62,3 @@ aside:hover {
 * { font-family: calibri, sans-serif; }  
 aside, footer { font-style: italic; }
 h1, h2, h3 {font-style: arial;}
-table {border: 1px solid black;}
