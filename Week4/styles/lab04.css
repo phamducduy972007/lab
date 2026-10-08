@@ -11,6 +11,11 @@ last modified: 10/8/2026
 description: lab01.html files it refers to (if known)]
 
 */
+html {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 h1 { 
     color: purple; 
     font-size: 2em; 
@@ -29,6 +34,9 @@ nav a {
     border: 4px solid #ccc;
 }
 
+hr {
+    border: 2px solid black;
+}
 #images {
     text-align : center;
 }
