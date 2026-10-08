@@ -29,6 +29,9 @@ nav a {
     border: 4px solid #ccc;
 }
 
+ol ul {
+    list-style: square;
+}
 
 
 hr {
@@ -48,7 +51,7 @@ hr {
     text-align: right;
 }
 
-aside:hover {
+a:hover {
     background-color: lightblue;
     border-color: darkblue;
 }
