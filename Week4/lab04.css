@@ -1,0 +1,55 @@
+/*
+
+filename: lab04
+
+author: Duc Duy
+
+created: 10/8/2026
+
+last modified: 10/8/2026
+
+description: lab01.html files it refers to (if known)]
+
+*/
+html {
+    
+}
+h1 { 
+    color: purple; 
+    font-size: 2em; 
+    font-weight: bold; 
+}
+h2{
+    color:rgb(0,128,128);
+    font-style: bold;
+    font-size: 1.5rem;
+    
+}
+
+nav a {
+    text-decoration: none;
+    padding:0.2em 0.6em;
+    border: 4px solid #ccc;
+}
+
+#images {
+    text-align : center;
+}
+
+.special {
+    color:darkorange;
+    font-weight: bold;
+}
+
+.month {
+    text-align: right;
+}
+
+aside:hover {
+    background-color: lightblue;
+    border-color: darkblue;
+}
+* { font-family: calibri, sans-serif; }  
+aside, footer { font-style: italic; }
+h1, h2, h3 {font-style: arial;}
+table {border: 1px solid black;}
