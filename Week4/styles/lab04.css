@@ -59,4 +59,4 @@ a:hover {
 * {color: #2F4F4F;}
 aside, footer { font-style: italic; }
 h1, h2, h3 {font-style: arial;}
-th, td {border: 1px solid black;}
+table, th, td {border: 1px solid black;}
