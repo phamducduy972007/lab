@@ -16,6 +16,10 @@ h1 {
     font-size: 2em; 
     font-weight: bold; 
 }
+
+ul>p {
+    color: red;
+}
 h2{
     color:rgb(0,128,128);
     font-style: bold;
