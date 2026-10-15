@@ -20,6 +20,7 @@ h1 {
 ul > p {
     color: red;
 }
+
 h2{
     color:rgb(0,128,128);
     font-style: bold;
@@ -34,7 +35,7 @@ nav a {
 }
 
 ol ul {
-    list-style: square;
+    list-style: square outside;
 }
 
 
@@ -64,3 +65,6 @@ a:hover {
 aside, footer { font-style: italic; }
 h1, h2, h3 {font-style: arial;}
 table, th, td {border: 1px solid black;}
+h1 {
+    font-family: "Bitcount Ink";
+}
