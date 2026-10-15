@@ -80,6 +80,8 @@ h1, h2, h3 {font-style: arial;}
 
 table, th, td {border: 1px solid black;}
 
+
+
 aside:hover {display:block;}
 .menu {display: inline-block;}
 
